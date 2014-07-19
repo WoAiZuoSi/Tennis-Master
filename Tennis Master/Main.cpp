@@ -15,7 +15,7 @@ void setup ( )
 {
 	aga = 270;
 	agb = 45;
-	radius = 1.5f;
+	radius = 2.0f;
 	doControl = false;
 }
 
@@ -29,10 +29,10 @@ void DarkGDK ( void )
 	dbLoadImage ( "123.bmp", 1 );
 	dbSprite ( 1, 0, 0, 1 );
 
-	dbLoadObject		( "media\\New Gun.3DS" , 1 );
-	dbPositionObject	( 1 , 0 , 0 , 0 );
-	//dbSetObjectSpeed ( 1, 50 );
-	//dbLoopObject ( 1 );
+	dbLoadObject		( "media\\H-USA-Idle.x" , 1 );
+	dbPositionObject	( 1 , 0 , -1 , 0 );
+	dbSetObjectSpeed ( 1, 50 );
+	dbLoopObject ( 1 );
 
 	dbMakeObjectBox ( 2, 1, 1, 1 );
 	dbPositionObject ( 2, 3, 0, 0 );
